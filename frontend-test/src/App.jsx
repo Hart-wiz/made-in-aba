@@ -22,11 +22,11 @@ const router = createBrowserRouter([
     element: <Register />,
   },
   {
-    path: "/auth/buyerPage",
+    path: "/auth/buyer",
     element: <Buyerpage />,
   },
   {
-    path: "/auth/sellerPage",
+    path: "/auth/seller",
     element: <Sellerpage />,
   },
 ]);
