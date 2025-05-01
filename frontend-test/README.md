@@ -1,12 +1,11 @@
-# React + Vite
+# made-in-aba frontend design
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+this is a test frontend design for the frontend of the ecommerce app for made-in-aba.
+Used to demonstrate using git for collaboration and to test api end-points by the server engineers
 
-Currently, two official plugins are available:
+## tech stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Reactjs:** which is a js framework
+- **tailwind css:** for clean styling
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## features
