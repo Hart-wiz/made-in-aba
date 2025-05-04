@@ -1,16 +1,16 @@
 import React from "react";
-import Home from "./pages/home.jsx";
 import Login from "./pages/login.jsx";
 import Register from "./pages/register.jsx";
 import Sellerpage from "./pages/sellerpage.jsx";
 import Buyerpage from "./pages/buyerpage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NotfoundPage from "./pages/NotfoundPage.jsx";
+import Hero from "./pages/Hero.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Hero />,
     errorElement: <NotfoundPage />,
   },
   {
