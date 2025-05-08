@@ -1,10 +1,16 @@
 import React, {useState} from 'react'
+import PageControl from '../components/pageControl'
 
 const Login =() =>{
 
     const[isLoginMode, setIsLoginMode] = useState(false)
   return (
+    <div>
+
+   <PageControl/>
+   <div className='flex justify-center items-center h-screen bg-gradient-to-r from-blue-700 via-cyan-600 to-cyan-200'>
     <div className='w-[430px] bg-white p-8 rounded-2xl shadow-lg'>
+
         {/* HEADER TITLE */}
         <div className='flex justify-center mb-4'>
             <h2 className='text-3xl font-semibold text-center'>{isLoginMode ? "Login" : "sign up"}</h2>
@@ -60,6 +66,8 @@ const Login =() =>{
                  </p>
           </form>
     </div>
+  </div>
+  </div>
   )
 }
 
