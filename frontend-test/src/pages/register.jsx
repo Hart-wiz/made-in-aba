@@ -6,7 +6,7 @@ const register = () => {
     <div>
       <PageControl />
       <main>
-        <h1>REGISTER PAGE</h1>
+        <h1 className="text-3xl">REGISTER PAGE</h1>
       </main>
     </div>
   );

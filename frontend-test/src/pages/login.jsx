@@ -6,7 +6,7 @@ const login = () => {
     <div>
       <PageControl />
       <main>
-        <h1>LOGIN PAGE</h1>
+        <h1 className="text-3xl">LOGIN PAGE</h1>
       </main>
     </div>
   );
