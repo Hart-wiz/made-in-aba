@@ -4,6 +4,7 @@ import Login from "./pages/login.jsx";
 import Register from "./pages/register.jsx";
 import Sellerpage from "./pages/sellerpage.jsx";
 import Buyerpage from "./pages/buyerpage.jsx";
+import DashboardLayout from "./components/Dashboard/Dashboard.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NotfoundPage from "./pages/NotfoundPage.jsx";
 
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/auth/buyer",
-    element: <Buyerpage />,
+    element: <DashboardLayout />,
   },
   {
     path: "/auth/seller",
