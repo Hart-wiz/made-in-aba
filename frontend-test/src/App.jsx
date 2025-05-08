@@ -1,6 +1,5 @@
 import React from "react";
 import Login from "./pages/login.jsx";
-import Register from "./pages/register.jsx";
 import Sellerpage from "./pages/sellerpage.jsx";
 import Buyerpage from "./pages/buyerpage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -15,12 +14,10 @@ const router = createBrowserRouter([
   },
   {
     path: "/login",
+    
     element: <Login />,
   },
-  {
-    path: "/Register",
-    element: <Register />,
-  },
+  
   {
     path: "/auth/buyer",
     element: <Buyerpage />,
