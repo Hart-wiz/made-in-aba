@@ -2,10 +2,16 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { createUser, getUserByEmail } from "../models/userModel.js";
 
-// Registration function
+// .......................Registration function...........................
 export const registerUser = async (req, res) => {
-  const { username, email, password } = req.body;
+  const { username, email, password, confirmpassword } = req.body;
 
+  // help user checkmate password by using confirm password
+  if (password !== confirmpassword) {
+    return res.status(403).json({
+      message: "password doesn't match",
+    });
+  }
   // Check if user already exists
   const existingUser = await getUserByEmail(email);
   if (existingUser) {
@@ -27,7 +33,7 @@ export const registerUser = async (req, res) => {
   }
 };
 
-// Login function
+// ...............................Login function..............................
 export const loginUser = async (req, res) => {
   const { email, password } = req.body;
 
